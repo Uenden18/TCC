@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde e Bem-Estar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(180deg, #e8f8f2, #f9fff9);
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #58b19f, #78e08f);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 0 0 60px 60px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      opacity: 0.9;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(74, 117, 103, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 15px 0;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 25px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #a4f8a4;
+      text-shadow: 0 0 8px #dfffdf;
+    }
+
+    section {
+      padding: 60px 10%;
+      text-align: center;
+      border-radius: 40px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeIn 1s ease both;
+      position: relative;
+    }
+
+    section::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      height: 6px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #58b19f, #a3e8c7);
+      opacity: 0.4;
+    }
+
+    section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: #2e5e4e;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .galeria img {
+      width: 320px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+      transition: all 0.4s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 25px rgba(88, 177, 159, 0.6);
+    }
+
+    #topo {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #58b19f;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: 0.3s;
+      display: none;
+    }
+
+    #topo:hover {
+      background: #3f8c7a;
+      transform: scale(1.1);
+    }
+
+    footer {
+      background: linear-gradient(135deg, #4a7567, #3f6d5d);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      border-radius: 60px 60px 0 0;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin: 8px;
+      font-size: 0.95em;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);} to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      header h1 {font-size: 2.2em;}
+      .galeria img {width: 90%; height: auto;}
+      nav a {margin: 0 10px; font-size: 1em;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Saúde e Bem-Estar</h1>
+    <p>Cuide do corpo, da mente e da alma — viva em equilíbrio!</p>
+  </header>
+
+  <nav>
+    <a href="#fisica">Saúde Física</a>
+    <a href="#mental">Saúde Mental</a>
+    <a href="#alimentacao">Alimentação</a>
+    <a href="#natureza">Natureza</a>
+  </nav>
+
+  <section id="fisica">
+    <h2>Saúde Física</h2>
+    <p>Praticar atividades físicas regularmente traz benefícios para o corpo e a mente. O movimento é vida!</p>
+    <div class="galeria">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ODmMeOpizYAH9cFydhKGcwSm51Ul_2BB5g&s" alt="Mulher correndo ao nascer do sol">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDKaf23X8aNcRIR1gx7aThgvAfuwdAHTrf_g&s" alt="Academia e musculação">
+      <img src="data:image/jpeg;base64,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" alt="Pessoa praticando yoga">
+    </div>
+  </section>
+
+  <section id="mental">
+    <h2>Saúde Mental</h2>
+    <p>Cuidar da mente é essencial. Momentos de lazer, meditação e boas relações ajudam a manter o equilíbrio emocional.</p>
+    <div class="galeria">
+      <img src="https://img.freepik.com/fotos-premium/meditacao-ao-ar-livre-mulher-feliz-fazendo-meditacao-e-relaxando-no-parque-meditacao-na-natureza-conceito-de-estilo-de-vida-saudavel-e-relaxamento-mulher-bonita-praticando-meditacao-na-grama_649561-127.jpg" alt="Meditação ao ar livre">
+      <img src="https://img.freepik.com/fotos-gratis/emocoes-positivas-jovem-bonito-barbudo-homem-caucasiano-em-t-shirt-azul-deitada-na-grama-sorrindo-com-os-dentes-rindo-relaxando-do-lado-de-fora-na-manha-de-verao-com-a-expressao-do-rosto-feliz_176420-19933.jpg?semt=ais_hybrid&w=740&q=80" alt="Homem relaxando e sorrindo">
+      <img src="https://correiofrancisquence.com.br/wp-content/uploads/2025/03/paz-interior-1024x576.webp" alt="Momento de paz interior">
+    </div>
+  </section>
+
+  <section id="alimentacao">
+    <h2>Alimentação Saudável</h2>
+    <p>Comer bem é cuidar de si. Opte por alimentos naturais, frutas e verduras — o combustível do bem-estar!</p>
+    <div class="galeria">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjte0nKcxsj21-4UqzJVrvNyiM6lyIuylGlg&s" alt="Frutas frescas e coloridas">
+      <img src="https://s2-g1.glbimg.com/bx3e_YOH6BsoTYMvxkJcFvT4R7k=/0x0:919x611/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/q/j/lHXUSrSAmso8NHP3zmVQ/parto-colorido.jpg" alt="Prato saudável com vegetais">
+      <img src="https://minhasaude.proteste.org.br/wp-content/webp-express/webp-images/uploads/2022/11/prato-com-salada-verde-tomate.jpg.webp" alt="Salada nutritiva">
+    </div>
+  </section>
+
+  <section id="natureza">
+    <h2>Contato com a Natureza</h2>
+    <p>Estar próximo à natureza renova as energias, reduz o estresse e amplia a nossa conexão com o mundo.</p>
+    <div class="galeria">
+      <img src="https://plus.unsplash.com/premium_photo-1668110864450-48a6591c3a22?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FtaW5obyUyMG5hJTIwZmxvcmVzdGF8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000" alt="Caminho na floresta">
+      <img src="https://cdn.pixabay.com/photo/2020/03/02/21/13/mountains-4896965_1280.jpg" alt="Montanhas e ar puro">
+      <img src="https://static.wixstatic.com/media/8ddca0ed91ef4e2a937210f91cae42c2.jpg/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/8ddca0ed91ef4e2a937210f91cae42c2.jpg" alt="Pôr do sol e tranquilidade">
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Saúde e Bem-Estar</strong> — Viva melhor todos os dias.</p>
+    <p>Desenvolvido com 💚 por <strong>Wendell Davy</strong> — 2025</p>
+  </footer>
+
+  <button id="topo" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+  <script>
+    const topo = document.getElementById('topo');
+    window.addEventListener('scroll', () => {
+      topo.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
+
